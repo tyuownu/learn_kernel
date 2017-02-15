@@ -1,0 +1,4 @@
+*.swp
+kernel-2.6.26/
+bochs.out
+hd.img

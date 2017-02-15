@@ -1,0 +1,9 @@
+megs: 128
+romimage: file=/usr/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest
+#ata0-master: type=disk, path=disk.img, cylinders=100, heads=16, spt=63
+ata0-master: type=disk, path=hd.img, mode=flat
+#floppya: 1_44=floppy.img, status=inserted
+boot: c
+log: bochs.out
+cpu: ips=400000000
