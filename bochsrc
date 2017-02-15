@@ -1,4 +1,5 @@
-megs: 128
+#megs: 128
+megs: 1536
 romimage: file=/usr/share/bochs/BIOS-bochs-latest
 vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest
 #ata0-master: type=disk, path=disk.img, cylinders=100, heads=16, spt=63

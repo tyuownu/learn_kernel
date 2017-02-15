@@ -2,13 +2,18 @@
 
 * tool version
 busybox: 1.26.0
+
 kernel: 2.6.26
+
 grub: 0.97
 
 set environment:
 1. disassembly vmlinux
+
     objdump -d vmlinux > disa
 2. mv hd.img
+
     mv hd.img ../
 3. packaged the kernel-2.6.26/ to upload
+
 	tar cjvf kernel-2.6.26
