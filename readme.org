@@ -16,10 +16,17 @@ set environment:
     mv hd.img ../
 3. packaged the kernel-2.6.26/ to upload
 
-	tar cjvf kernel-2.6.26
+    tar cjvf kernel-2.6.26
 
-TODO:
+# TODO:
 using qemu or bochs with gdb to debug kernel source code.
+
 qemu: qemu-system-i386 -serial mon:stdio -S -hda hd.img -m 128 -gdb tcp::1234
+
 bochs: adding this to bochsrc
-    gdbstub: enable=1, port=1234, text-base=0, data_base=0, bss_base=0
+
+    gdbstub: enabled=1, port=1234, text-base=0, data_base=0, bss_base=0
+
+    configure option:
+
+    ./configure --enable-plugins --enable-disasm --enable-gdb-stub --prefix=/usr

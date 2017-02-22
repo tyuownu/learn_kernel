@@ -8,3 +8,4 @@ ata0-master: type=disk, path=hd.img, mode=flat
 boot: c
 log: bochs.out
 cpu: ips=400000000
+gdbstub: enabled=1, port=1234, text_base=0, data_base=0, bss_base=0
